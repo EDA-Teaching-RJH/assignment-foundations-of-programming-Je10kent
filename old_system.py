@@ -55,7 +55,7 @@ def run_system_monolith():
             print("Analyzing...")
             count = 0
             
-            for rank in r:
+            for rank in range(len(r)):
                 if rank == "Captain" or "Commander": 
                     count = count + 1
             print("High ranking officers: " + count) 
