@@ -10,7 +10,7 @@ def run_system_monolith():
     print("WELCOME TO FLEET COMMAND")
 
     loading = 0
-    
+
     while loading < 5:
         print("Loading module " + str(loading))
         loading=loading + 1
@@ -28,7 +28,7 @@ def run_system_monolith():
         if opt == "1":  
             print("Current Crew List:")
             
-            for i in range(10):
+            for i in range(len(n)):
                 print(n[i] + " - " + r[i]) 
                 
         elif opt == "2":
