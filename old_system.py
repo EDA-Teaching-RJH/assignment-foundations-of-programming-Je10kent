@@ -32,9 +32,9 @@ def run_system_monolith():
                 print(n[i] + " - " + r[i]) 
                 
         elif opt == "2":
-            new_name = input("Name: ")
-            new_rank = input("Rank: ")
-            new_div = input("Division: ")
+            new_name = input("Name: ").title()
+            new_rank = input("Rank: ").title()
+            new_div = input("Division: ").title()
             
            
             n.append(new_name)
