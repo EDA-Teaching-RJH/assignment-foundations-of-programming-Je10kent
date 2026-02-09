@@ -8,12 +8,12 @@ def run_system_monolith():
     print("BOOTING SYSTEM...")
     print("...")
     print("WELCOME TO FLEET COMMAND")
-    
-    
+
     loading = 0
+    
     while loading < 5:
         print("Loading module " + str(loading))
-        
+        loading=loading + 1
     
     while True:
         print("\n--- MENU ---")
