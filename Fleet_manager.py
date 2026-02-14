@@ -140,7 +140,15 @@ def Search_Crew(Names, Ranks):
         else:
             print("Not an option")
 
+def Filter_by_division(Names, Divisions):
 
+    Division_selection = input("Which division: ").title()
+    for div in range(len(Divisions)):
+        if Division_selection == Divisions[div]:
+            print(Names[div], "-", Divisions[div] )
+        else:
+            print("enter")
+            break
            
 
 
