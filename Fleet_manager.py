@@ -87,5 +87,21 @@ def Remove_member(Names, Ranks, Divisions, IDs):
     print("Removed,", Remove_member)
     return Names, Ranks, Divisions, IDs
 
+def Update_Ranks(Names, Ranks, IDs):
+    try:
+        
+        index = str(input("enter the ID of the officer for a rank change "))
+        for i in range(len(IDs)):
+            if IDs[i] == index:
+                print(f"Updating rank for {Names[i]} (Current:{Ranks[i]})")
+                New_ranks = input("Enter the new rank: ").title()
+                Ranks[i] = New_ranks
+                print(f"Rank has been updated for {Names[i]} (Rank has been updated to {New_ranks})")
+        else:
+            print("Changed")
+    except:
+        print("Change Rank")
+    return Names, Ranks, IDs
+
 
 main()
