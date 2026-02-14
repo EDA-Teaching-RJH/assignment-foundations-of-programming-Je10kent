@@ -150,6 +150,33 @@ def Filter_by_division(Names, Divisions):
             print("enter")
             break
            
+def Calculate_payroll(Ranks):
+    try:
+        price = 0
+        for i in len(Ranks):
+           
+            if Ranks[i] == "Captain":
+                Captain = 1000
+                print("A Captain makes £", Captain)
+                price= price + Captain
+
+            elif Ranks[i] == "Lieutenant":
+                Lieutenant = 800
+                print("A Lieutenant makes £", Lieutenant)
+                price = price + Lieutenant
+           
+            elif Ranks[i] == "Officer":
+                Officer = 600
+                print("An Officer makes £500", Officer)
+                price = price + Officer
+
+            elif Ranks[i] == "Esign":
+                Ensign = 200
+                print("An Esign makes £",Ensign)
+                price = price + Ensign
+
+    except:
+        print("insuffcient fund")
 
 
 
