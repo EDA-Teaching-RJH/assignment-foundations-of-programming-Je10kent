@@ -175,8 +175,29 @@ def Calculate_payroll(Ranks):
                 print("An Esign makes £",Ensign)
                 price = price + Ensign
 
-    except:
-        print("insuffcient fund")
+def Count_officers(Ranks):
+     
+    count_Captain = 0
+    Count_Officer = 0
+    count_Lieutenant = 0
+    count_Esign = 0
+     
+    for i in range(len(Ranks)):
+           
+        if Ranks[i] == "Captain":
+            count_Captain = count_Captain + 1
+
+        elif Ranks[i] == "Officer":
+            Count_Officer = Count_Officer + 1
+
+        elif Ranks[i] == "Lieutenant":
+            count_Lieutenant = count_Lieutenant + 1
+        elif Ranks[i] == "Esign":
+            count_Esign = count_Esign + 1
+
+        else:
+            break
+        print("The amount of Captains:", count_Captain, "\nThe amount of Officer:", Count_Officer , "\nThe amount of lieutenants:", count_Lieutenant, "\nThe amount of Esigns:",count_Esign )
 
 
 
