@@ -103,5 +103,47 @@ def Update_Ranks(Names, Ranks, IDs):
         print("Change Rank")
     return Names, Ranks, IDs
 
+def Search_Crew(Names, Ranks):
+    print("What are you searching for \n 1) The Names of the crew members \n 2) The Ranks and the amount of people with that rank \n 3) The divisions in the crew  ")
+    choice = int(input("Which would you like to carry out in this protocal"))
+    if choice == 1:
+        print("Names of the crew members ")
+        Number= 1
+        for i in range(len(Names)):
+            print(Number, "Crew member: " ,Names[i])
+            Number = Number + 1
+    elif choice == 2:
+        print("The ranks of the crew ")
+        select = int(input(" 1) Finding the ranks \n 2.  People with those ranks "))
+        if select == 1:
+            print("THe Ranks of the in the crew  \n Captian \n Officer \n Lieutenant \n Esign \n ")
+            rank_selection = input("which rank: ").title()
+            for i in range(len(Ranks)):
+                if rank_selection == Ranks[i]:
+                    print(Names[i], "-", Ranks[i] )
+                else:
+                    break  
+
+        elif choice == 2:
+            try:
+                rselect = input("which rank: ").title()
+                for rank in range(len(Ranks)):
+                    count = 0
+                    if Ranks[rank] == rselect:
+                        count = count + 1
+
+                        print("The rank of ", rselect, "has ", count, "members")    
+            except:
+                print("Rank is not shown ")
+       
+       
+        else:
+            print("Not an option")
+
+
+           
+
+
+
 
 main()
