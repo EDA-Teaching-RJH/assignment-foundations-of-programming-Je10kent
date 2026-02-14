@@ -60,4 +60,13 @@ def main():
             break
        
 
+def Display_roster(Names, Ranks, Divisions, IDs):
+    print("Current team members")
+    for i in range(len(Names)):
+            print(Names[i] + " - " , Ranks[i] , " - " , Divisions[i] , " - " , IDs[i])
+   
+
+
+
+
 main()
