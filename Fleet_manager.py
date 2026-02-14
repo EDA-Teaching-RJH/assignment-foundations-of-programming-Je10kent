@@ -9,7 +9,7 @@ def main():
     last_name = input("What is your last name")
     print("Welcome", First_name + last_name,
           "\n 1. Check curent memebrs"
-          "\n 2. Add a member"
+          "\n 2. new a member"
           "\n 3. Remove a member "
           "\n 4. Update the Ranks "
           "\n 5. Search Crew"
@@ -24,7 +24,7 @@ def main():
     while True:
         print("Welcome", First_name + last_name,
           "\n 1. Check curent memebrs"
-          "\n 2. Add a member"
+          "\n 2. New a member"
           "\n 3. Remove a member "
           "\n 4. Update the Ranks "
           "\n 5. Search Crew"
@@ -66,6 +66,18 @@ def Display_roster(Names, Ranks, Divisions, IDs):
             print(Names[i] + " - " , Ranks[i] , " - " , Divisions[i] , " - " , IDs[i])
    
 
+
+def Add_member(Names, Ranks, Divisions, IDs):
+    New_Name = str(input("What is the new Members name ")).title()
+    New_Rank = str(input("What is their Rank ")).title()
+    New_Division = str(input("what division are they in ")).title()
+    New_IDs = str(input("what is there ID code"))
+    Names.append(New_Name)
+    Ranks.append(New_Rank)
+    Divisions.append(New_Division)
+    IDs.append(New_IDs)
+    return Names, Ranks, Divisions, IDs
+     
 
 
 
